@@ -1,0 +1,21 @@
+.imageDiv{
+    /* background-color: red; */
+    border: 2px solid #fff;
+    height: 350px;
+    /* display: flex; */
+    /* gap: 25px; */
+    border-radius: 10%;
+    transition: transform 0.5s ease; /* Transition for slow zoom effect */
+
+}
+.imageDiv img {
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    
+}
+.imageDiv:hover {
+    transform: scale(1.1); /* Zoom effect */
+    box-shadow: 0 4px 18px rgba(48, 228, 12, 0.61); /* Backdrop shadow */
+   
+  }
