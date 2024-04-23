@@ -18,8 +18,8 @@ export default function SoftwareSkill() {
                 >
 
                
-                <div className="imageDiv" >
-                  <img src={skills.fontAwesomeClassname}   >
+                <div className="imageDiv" style={{height:"200px"}} >
+                  <img src={skills.fontAwesomeClassname} style={{"height":"150px","width":"150px"}}   >
                   </img>
                    <h6>{skills.skillName}</h6>
                   {/* <li

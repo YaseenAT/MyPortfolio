@@ -38,7 +38,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/YaseenAT",
-  linkedin: "https://www.linkedin.com/in/YassenAT/",
+  linkedin: "https://www.linkedin.com/in/yaseen-a-t-88150121a",
   gmail: "yaseen507at@gmail.com",
    
   // Instagram, Twitter and Kaggle are also supported in the links!

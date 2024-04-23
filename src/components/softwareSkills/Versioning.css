@@ -1,16 +1,19 @@
 .imageDiv{
     /* background-color: red; */
     border: 2px solid #fff;
-    height: 350px;
+    height: 250px;
     /* display: flex; */
     /* gap: 25px; */
     border-radius: 10%;
     transition: transform 0.5s ease; /* Transition for slow zoom effect */
 
 }
+.imageDiv h6{
+    /* background-color: grey; */
+    margin-top: 5px;
+}
 .imageDiv img {
-    height: 250px;
-    width: 250px;
+   
     padding: 20px;
     
 }

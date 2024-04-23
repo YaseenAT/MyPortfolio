@@ -1,0 +1,41 @@
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px;
+  }
+  
+  .skill {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .proficiency {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .advanced {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .intermediate {
+    background-color: #ffc107;
+  }
+  
+  .beginner {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .skill-name {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
