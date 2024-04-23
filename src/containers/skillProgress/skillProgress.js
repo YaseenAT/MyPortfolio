@@ -6,6 +6,12 @@ import Build from "../../assets/lottie/build";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function StackProgress() {
+
+
+
+
+
+  
   if (techStack.viewSkillBars) {
     return (
       <Fade bottom duration={1000} distance="20px">
