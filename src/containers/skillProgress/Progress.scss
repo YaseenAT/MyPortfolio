@@ -21,6 +21,7 @@
 }
 .skill {
   line-height: 3.5vw;
+  border: 1px solid red;
 }
 .skill-bars {
   font-size: 28px;
@@ -28,6 +29,7 @@
 }
 .skills-container {
   display: flex;
+  flex-direction: column;
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
