@@ -10,7 +10,13 @@ export default function AchievementCard({cardInfo, isDark}) {
     var win = window.open(url, "_blank");
     win.focus();
   }
-
+  const handleSaveToPC = (path) => {
+    const fileData = process.env.PUBLIC_URL + "/JavaScript Course Notes.pdf";
+    const link = document.createElement("a");
+    link.href = process.env.PUBLIC_URL + `/${path}.pdf`;
+    link.target = "_blank";
+    link.click();
+  };
   return (
     <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
       <div className="certificate-image-div">
@@ -36,7 +42,9 @@ export default function AchievementCard({cardInfo, isDark}) {
               className={
                 isDark ? "dark-mode certificate-tag" : "certificate-tag"
               }
-              onClick={() => openUrlInNewTab(v.url, v.name)}
+              onClick={() => handleSaveToPC(v.url)}
+              // onClick={() => openUrlInNewTab(v.url, v.name)}
+              href={process.env.PUBLIC_URL + "/Pdf.pdf"}
             >
               {v.name}
             </span>

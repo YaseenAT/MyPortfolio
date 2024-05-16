@@ -323,7 +323,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "Best_Team_Award"
         },
         // {
         //   name: "Award Letter",
@@ -344,7 +344,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          url: "CertificateOfCompletion_Google Ads Essential Training 2020"
         }
       ]
     },
@@ -354,7 +354,20 @@ const achievementSection = {
       image: require("./assets/images/image.png"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        {name: "Certification", url: "MOHAMMED YASEEN A.T1"},
+        // {
+        //   name: "Final Project",
+        //   url: "https://pakistan-olx-1.firebaseapp.com/"
+        // }
+      ]
+    },
+    {
+      title: "JavaScript Intermediator",
+      subtitle: "Proficient in JavaScript, with intermediate-level expertise encompassing advanced topics such as Object-Oriented Programming, asynchronous operations, error handling, ES6+ features, functional programming, modules, DOM manipulation, API requests, and client-side storage ",
+      image: require("./assets/images/java-script.png"),
+      imageAlt: "PWA Logo",
+      footerLink: [
+        {name: "Certification", url: "E-certficate-previewJavaScript"},
         // {
         //   name: "Final Project",
         //   url: "https://pakistan-olx-1.firebaseapp.com/"

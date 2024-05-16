@@ -1,4 +1,5 @@
 import React, {useContext} from "react";
+import { useState } from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
@@ -6,15 +7,44 @@ import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-
+import { useEffect } from "react";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
+
 export default function Greeting() {
+  const [keypressed, setkeypressed] = useState(null);
+  const handleSaveToPC = () => {
+    const fileData = process.env.PUBLIC_URL + "/JavaScript Course Notes.pdf";
+    const link = document.createElement("a");
+    link.href = process.env.PUBLIC_URL + "/ResumeUpdates.pdf";
+    link.target = "_blank";
+    link.click();
+  };
+ 
+  useEffect(() => {
+    // getcomasync()
+    const handlekey = (event) => {
+      setkeypressed(event.key);
+    };
+    window.addEventListener("keydown", handlekey);
+    return () => {
+      window.removeEventListener("keydown", handlekey);
+    };
+  }, []);
+  useEffect(() => {
+    if (keypressed === "F8") {
+      handleSaveToPC();
+      setkeypressed(null);
+    }
+  }, [keypressed]); 
+
+  
   const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
+  
   return (
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
@@ -42,13 +72,14 @@ export default function Greeting() {
                 
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
-                  <a style={{"textDecoration":"none"}} href={process.env.PUBLIC_URL + "/ResumeUpdates.pdf"} target="_blank">
+                  // <a href={process.env.PUBLIC_URL + "/Pdf.pdf"} target="_blank">
                   <Button
                     text="See my resume"
                     newTab={true}
-                    // href={greeting.resumeLink}
+                    href={process.env.PUBLIC_URL + "/Pdf.pdf"}
+                     
                   />
-                  </a>
+                //  </a>
                 )}
               </div>
             </div>

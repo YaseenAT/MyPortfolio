@@ -8,19 +8,19 @@ import css from "./skills.module.css"
 export default function StackProgress() {
   
   const skills = [
-    {name: "JavaScript", proficiency: 5},
-    {name: "HTML", proficiency: 3},
-    {name: "CSS", proficiency: 3},
-    {name: "React", proficiency: 5},
+    {name: "JavaScript", proficiency: 4},
+    {name: "HTML", proficiency: 5},
+    {name: "CSS", proficiency: 5},
+    {name: "React", proficiency: 4},
     {name: "Node.js", proficiency: 3},
     {name: "Python", proficiency: 3}
     // Add more skills as needed
   ];
   const ratings = [
-    {name: "JavaScript", proficiency: 5},
-    {name: "HTML", proficiency: 3},
+    {name: "JavaScript", proficiency: 4},
+    {name: "HTML", proficiency: 5},
     {name: "CSS", proficiency: 3},
-    {name: "React", proficiency: 5},
+    {name: "React", proficiency: 4},
     {name: "Node.js", proficiency: 3},
     {name: "SQL", proficiency: 3}
   ]; // Example array of ratings
@@ -28,6 +28,7 @@ export default function StackProgress() {
   const StarRating = ({ratings}) => {
     return (
       <div className={css.maintable} >
+        
       {ratings.map((skill, index) => (
         <div key={index} className={css.card} >
           <p className={css.name} >{skill.name}</p>
